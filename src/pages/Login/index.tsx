@@ -49,7 +49,8 @@ const Login = () => {
             errorMessage={errors?.password?.message}
           />
           <Spacing />
-          <Button title="Entrar" />
+          {isValid ?  <Button title="Entrar"  />: null}
+         
         </Column>
       </LoginContainer>
     </Container>
